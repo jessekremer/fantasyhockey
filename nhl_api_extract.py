@@ -1,3 +1,7 @@
+# enhancement - JSON should give me a dictionary and keep it as that.
+
+
+
 #Uses the NHL api to pull data on all current players for each of the teams
 
 #https://hackernoon.com/retrieving-hockey-stats-from-the-nhls-undocumented-api-zz3003wrw
@@ -13,12 +17,17 @@
 # PP opportunities
 #https://statsapi.web.nhl.com/api/v1/game/2020020177/feed/live?site=en_nhl
 
+# get PEM file for requests: https://stackoverflow.com/a/70899136/18208503
+
 import requests
 import json
 import sys
+# import certifi
+# import urllib3
 
-#how many rows to return from each api call
+certificate_file='config/web-nhl-com-chain.pem' # provide your own
 limit = 200
+done = 0
 game_header='playerId,periodType,period,date,teamId,opponentId,timeOnIce,assists,goals,pim,shots,games,hits,powerPlayGoals,powerPlayPoints,powerPlayTimeOnIce,evenTimeOnIce,penaltyMinutes,faceOffPct,gameWinningGoals,overTimeGoals,shortHandedGoals,shortHandedPoints,shortHandedTimeOnIce,blocked,plusMinus,points,shifts,ot,shutouts,ties,wins,losses,saves,powerPlaySaves,shortHandedSaves,evenSaves,shortHandedShots,evenShots,powerPlayShots,decision,savePercentage,gamesStarted,shotsAgainst,goalsAgainst,powerPlaySavePercentage,evenStrengthSavePercentage,win\n'
 game_csv=game_header
 
@@ -30,11 +39,11 @@ if not what_data:
     what_data='1'
 print(what_data)
 print("\n[What Season]")
-print("example: 20202021\n")
+print("example: 20232024\n")
 season=input("What Season? ")
 if not season:
-    season='20202021'
-    print("Defaulted to: 20202021")
+    season='20232024'
+    print("Defaulted to: 20232024")
 if what_data=='1':
     print("[What Level of Detail?\n")
     print("1 = Season Total")
@@ -51,7 +60,8 @@ team_csv='teamId,period,name,abbreviation,teamName,shortName,gamesPlayed,wins,lo
 player_csv='playerId,fullName,firstName,lastName,currentAge,rookie,primaryPosition,primaryPositionType,currentTeamId\n'
 
 baseurl='https://statsapi.web.nhl.com'
-r = requests.get(baseurl+'/api/v1/teams')
+r = requests.get(baseurl+'/api/v1/teams',verify=certificate_file)
+# r = http.request('GET', baseurl+'/api/v1/teams',json='Any')
 teams = r.json()      
 # print(baseurl+'/api/v1/teams')
 for t in teams['teams']:
@@ -67,7 +77,8 @@ for t in teams['teams']:
         team_csv+=t['shortName']
     team_csv+=','
     # get team stats
-    tr = requests.get(baseurl+'/api/v1/teams/'+str(t['id'])+'/stats?season='+season)
+    tr = requests.get(baseurl+'/api/v1/teams/'+str(t['id'])+'/stats?season='+season,verify=certificate_file)
+    # tr = http.request('GET', baseurl+'/api/v1/teams/'+str(t['id'])+'/stats?season='+season,json='Any')
     teams_stats=tr.json()
     try:
         ts=teams_stats['stats'][0]['splits'][0]['stat']    
@@ -190,12 +201,14 @@ for t in teams['teams']:
     team_csv+='\n'
     if what_data=='1':
         teamplayerapi = t['link']+'/roster'
-        r= requests.get(baseurl+teamplayerapi)
+        r= requests.get(baseurl+teamplayerapi,verify=certificate_file)
+        # r=  http.request('GET', baseurl+teamplayerapi)
         team_players = r.json()
         for p in team_players['roster']:
             #print(baseurl+teamplayerapi)
             playerapi=p['person']['link']
-            r = requests.get(baseurl+playerapi)    
+            r = requests.get(baseurl+playerapi,verify=certificate_file)    
+            # r=  http.request('GET', baseurl+playerapi)
             player = r.json()
             player_csv+=str(player['people'][0]['id'])
             player_csv+=','
@@ -220,7 +233,8 @@ for t in teams['teams']:
                 periodapi='/stats?stats=gameLog&season='+season
             else:
                 periodapi='/stats?stats=statsSingleSeason&season='+season
-            r = requests.get(baseurl+playerapi+periodapi)
+            r = requests.get(baseurl+playerapi+periodapi,verify=certificate_file)
+            # r = http.request('GET', baseurl+playerapi+periodapi)
             games = r.json()
             # print(baseurl+playerapi+periodapi)
             for ig in games['stats'][0]['splits']:
@@ -377,16 +391,18 @@ for t in teams['teams']:
                     # else:
                         # player_game_row+='loss'
                 player_game_row+='\n'
-    print(t['name']+' done')
+    done+=1
+    done_str=''
+    if done < 10:
+        done_str=' ' 
+    done_str+=str(done)
+    print('['+done_str+'/32] '+t['name']+' done')
     
 game_csv+=player_game_row
-splits_file = open('nhl_teams_'+season+'.csv','w')
-splits_file.write(team_csv)
-splits_file.close()
+with open('nhl_teams_'+season+'.csv','w',encoding='utf-8') as splits_file:
+    splits_file.write(team_csv)
 if what_data=='1':
-    splits_file = open('nhl_players.csv','w')
-    splits_file.write(player_csv)
-    splits_file.close()
-    splits_file = open('nhl_player_'+season+'_'+periodType+'.csv','w')
-    splits_file.write(game_csv)
-    splits_file.close()
+    with open('nhl_players.csv','w',encoding='utf-8') as splits_file:
+        splits_file.write(player_csv)
+    with open('nhl_player_'+season+'_'+periodType+'.csv','w',encoding='utf-8') as splits_file:
+        splits_file.write(game_csv)

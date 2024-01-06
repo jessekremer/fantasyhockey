@@ -1,0 +1,8 @@
+hockeystats:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'hockeystats.duckdb'
+      #optional fields
+      schema: main

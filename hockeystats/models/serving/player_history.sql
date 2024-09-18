@@ -7,7 +7,7 @@ with
     players as (select * from {{ ref('players') }}),
     teams as (select * from {{ ref('teams') }}),
 
-    current_season as (select 2024 as period),
+    current_season as (select 2025 as period),
     stats as (
         select 
             p.playerId,

@@ -7,7 +7,7 @@
 with
     player_history as (select * from {{ ref('player_history') }}),
     rank_athletic_cte as (select * from {{ ref('rank_athletic_clean')}}),
-    current_season as (select 2024 as period),
+    current_season as (select 2025 as period),
     norog as (
         select 
             curr.firstName, 
@@ -72,8 +72,8 @@ with
             nr.est_fpts,
             rank() over (order by nr.est_fpts desc) as norog_rank,
             rank() over (partition by nr.primaryPosition order by nr.est_fpts desc) as norog_pos_rank,
-            rank() over (partition by nr.primaryPosition order by ar."POS RK" desc) as athletic_pos_rank,
-            ar.RK as athletic_rank,
+            rank() over (partition by nr.primaryPosition order by ar.FP desc) as athletic_pos_rank,
+            rank() over (order by ar.FP desc) as athletic_rank,
             ar.POS as athletic_pos
         from
             norog nr

@@ -1,0 +1,63 @@
+{{ 
+    config(materialized='table') 
+}}
+
+with games as (select * from {{ ref('nhl_games_singleSeason') }})
+select 
+    playerId,
+    periodType,
+    period,
+    date,
+    teamId,
+    opponentId,
+    max(timeOnIce) as timeOnIce,
+    max(assists) as assists,
+    max(goals) as goals,
+    max(pim) as pim,
+    max(shots) as shots,
+    max(games) as games,
+    max(hits) as hits,
+    max(powerPlayGoals) as powerPlayGoals,
+    max(powerPlayPoints) as powerPlayPoints,
+    max(powerPlayTimeOnIce) as powerPlayTimeOnIce,
+    max(evenTimeOnIce) as evenTimeOnIce,
+    max(penaltyMinutes) as penaltyMinutes,
+    max(faceOffPct) as faceOffPct,
+    max(gameWinningGoals) as gameWinningGoals,
+    max(overTimeGoals) as overTimeGoals,
+    max(shortHandedGoals) as shortHandedGoals,
+    max(shortHandedPoints) as shortHandedPoints,
+    max(shortHandedTimeOnIce) as shortHandedTimeOnIce,
+    max(blocked) as blocked,
+    max(plusMinus) as plusMinus,
+    max(points) as points,
+    max(shifts) as shifts,
+    max(ot) as ot,
+    max(shutouts) as shutouts,
+    max(ties) as ties,
+    max(wins) as wins,
+    max(losses) as losses,
+    max(saves) as saves,
+    max(powerPlaySaves) as powerPlaySaves,
+    max(shortHandedSaves) as shortHandedSaves,
+    max(evenSaves) as evenSaves,
+    max(shortHandedShots) as shortHandedShots,
+    max(evenShots) as evenShots,
+    max(powerPlayShots) as powerPlayShots,
+    max(decision) as decision,
+    max(savePercentage) as savePercentage,
+    max(gamesStarted) as gamesStarted,
+    max(shotsAgainst) as shotsAgainst,
+    max(goalsAgainst) as goalsAgainst,
+    max(powerPlaySavePercentage) as powerPlaySavePercentage,
+    max(evenStrengthSavePercentage) as evenStrengthSavePercentage,
+    max(win) as win
+from 
+    games
+group by
+    playerId,
+    periodType,
+    period,
+    date,
+    teamId,
+    opponentId

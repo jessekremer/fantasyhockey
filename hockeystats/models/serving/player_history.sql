@@ -3,11 +3,10 @@
 }}
 
 with
-    player_stats as (select * from {{ ref('player_stats') }}),
+    games as (select * from {{ ref('games') }}),
     players as (select * from {{ ref('players') }}),
     teams as (select * from {{ ref('teams') }}),
 
-    current_season as (select 2025 as period),
     stats as (
         select 
             p.playerId,
@@ -15,9 +14,9 @@ with
             p.lastName,
             concat(concat(p.firstName, ' '), p.lastName) as fullName,
             p.primaryPosition,
-            t.abbreviation as team,
+            p.currentTeamId as team,
             p.currentAge,
-            p.currentAge-(cs.period-right(ps.period,4)::integer) as age,
+            p.currentAge as age,
             ps.period,
             ps.timeOnIce,
             ps.games,
@@ -44,11 +43,9 @@ with
             +ps.blocked*1 as fpts
         from 
             players p
-            inner join player_stats ps on ps.playerId = p.playerId
-            left outer join teams t on t.teamId = p.currentTeamId and t.period = ps.period 
-            inner join current_season cs on 1=1
+            inner join games ps on ps.playerId = p.playerId
         where 
-            p.rookie = 'False'
+            p.rookieFlag = 'False'
         and p.primaryPosition <> 'G'),
     avg_health as (
         select 
@@ -67,7 +64,6 @@ with
             stats.primaryPosition,
             stats.team,
             stats.currentAge,
-            stats.age,
             stats.period,
             stats.timeOnIce,
             stats.games,
@@ -85,14 +81,6 @@ with
             stats.fpts,
             case when ah.pct > 0.5 then round(stats.fpts*(82/games),1) else stats.fpts end as fpts_82,
             ah.pct as health_modifier,
-            case 
-                when stats.age < 24 then 1.2
-                when stats.age < 27 then 1.02
-                when stats.age < 30 then 0.93
-                when stats.age < 33 then 0.94
-                when stats.age < 36 then 1.07
-                when stats.age < 39 then 1.1	
-            else 1 end as age_modifier,
             case 
                 when stats.currentAge < 24 then 1.2
                 when stats.currentAge < 27 then 1.02

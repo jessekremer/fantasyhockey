@@ -7,7 +7,6 @@
 with
     player_history as (select * from {{ ref('player_history') }}),
     rank_athletic_cte as (select * from {{ ref('rank_athletic_clean')}}),
-    current_season as (select 2025 as period),
     norog as (
         select 
             curr.firstName, 
@@ -41,26 +40,16 @@ with
             *(curr.current_age_modifier+curr.health_modifier)/2,1) as est_fpts
         from 
             player_history curr
-            inner join current_season on 1=1
-            left outer join player_history ph_1yago on right(ph_1yago.period,4)::integer = current_season.period-1 and curr.playerId = ph_1yago.playerId 
-            left outer join player_history ph_2yago on right(ph_2yago.period,4)::integer = current_season.period-2 and curr.playerId = ph_2yago.playerId
-            left outer join player_history ph_3yago on right(ph_3yago.period,4)::integer = current_season.period-3 and curr.playerId = ph_3yago.playerId
-            left outer join player_history ph_4yago on right(ph_4yago.period,4)::integer = current_season.period-4 and curr.playerId = ph_4yago.playerId
+            left outer join player_history ph_1yago on right(ph_1yago.period,4)::integer = {{ var("current_season") }}-1 and curr.playerId = ph_1yago.playerId 
+            left outer join player_history ph_2yago on right(ph_2yago.period,4)::integer = {{ var("current_season") }}-2 and curr.playerId = ph_2yago.playerId
+            left outer join player_history ph_3yago on right(ph_3yago.period,4)::integer = {{ var("current_season") }}-3 and curr.playerId = ph_3yago.playerId
+            left outer join player_history ph_4yago on right(ph_4yago.period,4)::integer = {{ var("current_season") }}-4 and curr.playerId = ph_4yago.playerId
         where 
-            right(curr.period,4)::integer = current_season.period-1),
+            right(curr.period,4)::integer = {{ var("current_season") }}-1),
     injuries as (
         -- https://www.cbssports.com/nhl/injuries/
-        select 'Isac Lundestrom' as fullName, 'Feb 9' as estimated_return union
-        select 'Jack Quinn' as fullName, 'Oct 29' as estimated_return union
-        select 'Calum Ritchie' as fullName, 'Nov 1' as estimated_return union
-        select 'Chris Wagner' as fullName, 'Feb 5' as estimated_return union
-        select 'Gabriel Landeskog' as fullName, 'Apr 1' as estimated_return union
-        select 'Brandon Montour' as fullName, 'Dec 12' as estimated_return union
-        select 'Aaron Ekblad' as fullName, 'Dec 14' as estimated_return union
-        select 'Christian Dvorak' as fullName, 'Nov 2' as estimated_return union
-        select 'Ryan Ellis' as fullName, 'Jul 1' as estimated_return union
-        select 'Jake Guentzel' as fullName, 'Oct 24' as estimated_return union
-        select 'Max Pacioretty' as fullName, 'Nov 2' as estimated_return
+        select 'Fakey McFake' as fullName, 'Apr 1' as estimated_return union
+        select 'John Broker' as fullName, 'Dec 12' as estimated_return
     ),
     all_ranks as (
         select 
@@ -77,7 +66,7 @@ with
             ar.POS as athletic_pos
         from
             norog nr
-            left outer join rank_athletic_cte ar on ar.better_name = nr.fullName
+            left outer join rank_athletic_cte ar on ar.better_name = nr.fullName and ar.TEAM = nr.team
             left outer join injuries i on i.fullName = nr.fullName)
 select 
 	ar.firstName, 

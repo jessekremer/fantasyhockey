@@ -10,7 +10,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481726,Adam Edstrom,Adam,Edstrom,23,2000-10-12,,C,Forward,NYR
 8480870,Bo Groulx,Bo,Groulx,24,2000-02-06,,C,Forward,NYR
 8481554,Kaapo Kakko,Kaapo,Kakko,23,2001-02-13,,R,Forward,NYR
-8482656,Ryder Korczak,Ryder,Korczak,21,2002-09-23,,C,Forward,NYR
+8482656,Ryder Korczak,Ryder,Korczak,22,2002-09-23,,C,Forward,NYR
 8475184,Chris Kreider,Chris,Kreider,33,1991-04-30,,L,Forward,NYR
 8482109,Alexis Lafrenière,Alexis,Lafrenière,22,2001-10-11,,L,Forward,NYR
 8479991,Jake Leschyshyn,Jake,Leschyshyn,25,1999-03-10,,C,Forward,NYR
@@ -46,7 +46,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8474149,Evgenii Dadonov,Evgenii,Dadonov,35,1989-03-12,,R,Forward,DAL
 8475168,Matt Duchene,Matt,Duchene,33,1991-01-16,,C,Forward,DAL
 8482919,Justin Ertel,Justin,Ertel,21,2003-05-27,,L,Forward,DAL
-8484796,Emil Hemming,Emil,Hemming,18,2006-06-27,,R,Forward,DAL
 8478449,Roope Hintz,Roope,Hintz,27,1996-11-17,,C,Forward,DAL
 8484829,Justin Hryckowian,Justin,Hryckowian,23,2001-02-23,,C,Forward,DAL
 8478888,Cameron Hughes,Cameron,Hughes,27,1996-10-09,,C,Forward,DAL
@@ -63,7 +62,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8479351,Sam Steel,Sam,Steel,26,1998-02-03,,C,Forward,DAL
 8482120,Antonio Stranges,Antonio,Stranges,22,2002-02-05,,L,Forward,DAL
 8484124,Chase Wheatcroft,Chase,Wheatcroft,22,2002-05-28,,C,Forward,DAL
-8484146,Tristan Bertucci,Tristan,Bertucci,19,2005-07-12,,D,Defenseman,DAL
 8483425,Lian Bichsel,Lian,Bichsel,20,2004-05-18,,D,Defenseman,DAL
 8478476,Kyle Capobianco,Kyle,Capobianco,27,1997-08-13,,D,Defenseman,DAL
 8476856,Mathew Dumba,Mathew,Dumba,30,1994-07-25,,D,Defenseman,DAL
@@ -130,17 +128,15 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8480845,Rasmus Kupari,Rasmus,Kupari,24,2000-03-15,,C,Forward,WPG
 8483471,Brad Lambert,Brad,Lambert,20,2003-12-19,,C,Forward,WPG
 8476392,Adam Lowry,Adam,Lowry,31,1993-03-29,,C,Forward,WPG
-8482780,Chaz Lucius,Chaz,Lucius,21,2003-05-02,,C,Forward,WPG
 8476480,Vladislav Namestnikov,Vladislav,Namestnikov,31,1992-11-22,,C,Forward,WPG
 8475799,Nino Niederreiter,Nino,Niederreiter,32,1992-09-08,,R,Forward,WPG
-8481695,Henri Nikkanen,Henri,Nikkanen,23,2001-04-28,,C,Forward,WPG
+8482149,Cole Perfetti,Cole,Perfetti,22,2002-01-01,,C,Forward,WPG
 8476460,Mark Scheifele,Mark,Scheifele,31,1993-03-15,,C,Forward,WPG
 8479972,Mason Shaw,Mason,Shaw,25,1998-11-03,,C,Forward,WPG
 8476952,Dominic Toninato,Dominic,Toninato,30,1994-03-09,,C,Forward,WPG
 8482139,Daniel Torgersson,Daniel,Torgersson,22,2002-01-26,,L,Forward,WPG
 8480014,Gabriel Vilardi,Gabriel,Vilardi,25,1999-08-16,,C,Forward,WPG
 8484242,Brayden Yager,Brayden,Yager,19,2005-01-03,,C,Forward,WPG
-8483526,Danil Zhilkin,Danil,Zhilkin,20,2003-12-19,,C,Forward,WPG
 8482459,Tyrel Bauer,Tyrel,Bauer,22,2002-03-23,,D,Defenseman,WPG
 8479639,Dylan Coghlan,Dylan,Coghlan,26,1998-02-19,,D,Defenseman,WPG
 8476331,Dylan DeMelo,Dylan,DeMelo,31,1993-05-01,,D,Defenseman,WPG
@@ -198,13 +194,11 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482098,Zachary Uens,Zachary,Uens,23,2001-05-13,,D,Defenseman,FLA
 8482496,Nils Aman,Nils,Aman,24,2000-02-07,,C,Forward,VAN
 8483395,Arshdeep Bains,Arshdeep,Bains,23,2001-01-09,,L,Forward,VAN
-8482865,Josh Bloom,Josh,Bloom,21,2003-06-08,,L,Forward,VAN
 8476927,Teddy Blueger,Teddy,Blueger,30,1994-08-15,,C,Forward,VAN
 8478444,Brock Boeser,Brock,Boeser,27,1997-02-25,,R,Forward,VAN
 8478498,Jake DeBrusk,Jake,DeBrusk,27,1996-10-17,,L,Forward,VAN
 8476858,Phillip Di Giuseppe,Phillip,Di Giuseppe,30,1993-10-09,,L,Forward,VAN
 8478856,Conor Garland,Conor,Garland,28,1996-03-11,,R,Forward,VAN
-8483535,Ty Glover,Ty,Glover,23,2000-10-01,,C,Forward,VAN
 8478046,Danton Heinen,Danton,Heinen,29,1995-07-05,,L,Forward,VAN
 8481535,Nils Hoglander,Nils,Hoglander,23,2000-12-20,,L,Forward,VAN
 8478057,Dakota Joshua,Dakota,Joshua,28,1996-05-15,,C,Forward,VAN
@@ -266,7 +260,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8478401,Pavel Zacha,Pavel,Zacha,27,1997-04-06,,C,Forward,BOS
 8484813,Drew Bavaro,Drew,Bavaro,24,2000-06-10,,D,Defenseman,BOS
 8483017,Frederic Brunet,Frederic,Brunet,21,2003-08-21,,D,Defenseman,BOS
-8480828,Michael Callahan,Michael,Callahan,24,1999-09-23,,D,Defenseman,BOS
+8480828,Michael Callahan,Michael,Callahan,25,1999-09-23,,D,Defenseman,BOS
 8478443,Brandon Carlo,Brandon,Carlo,27,1996-11-26,,D,Defenseman,BOS
 8483438,Jackson Edward,Jackson,Edward,20,2004-02-27,,D,Defenseman,BOS
 8476854,Hampus Lindholm,Hampus,Lindholm,30,1994-01-20,,D,Defenseman,BOS
@@ -285,7 +279,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8484846,Maxmilian Curran,Maxmilian,Curran,18,2006-08-27,,C,Forward,COL
 8477494,Jonathan Drouin,Jonathan,Drouin,29,1995-03-28,,L,Forward,COL
 8482147,Jean-Luc Foudy,Jean-Luc,Foudy,22,2002-05-13,,C,Forward,COL
-8484921,Chad Hillebrand,Chad,Hillebrand,25,1999-01-22,,L,Forward,COL
 8484976,Jere Innala,Jere,Innala,26,1998-03-17,,L,Forward,COL
 8483930,Ivan Ivan,Ivan,Ivan,22,2002-08-20,,C,Forward,COL
 8480448,Parker Kelly,Parker,Kelly,25,1999-05-14,,C,Forward,COL
@@ -304,7 +297,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481737,Matt Stienburg,Matt,Stienburg,23,2000-10-07,,C,Forward,COL
 8476391,T.J. Tynan,T.J.,Tynan,32,1992-02-25,,C,Forward,COL
 8475780,Chris Wagner,Chris,Wagner,33,1991-05-27,,R,Forward,COL
-8484548,Briley Wood,Briley,Wood,21,2003-01-15,,C,Forward,COL
 8477425,Miles Wood,Miles,Wood,29,1995-09-13,,L,Forward,COL
 8483569,Wyatt Aamodt,Wyatt,Aamodt,26,1997-11-22,,D,Defenseman,COL
 8482072,Jack Ahcan,Jack,Ahcan,27,1997-05-18,,D,Defenseman,COL
@@ -318,10 +310,8 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8484258,Sam Malinski,Sam,Malinski,26,1998-07-27,,D,Defenseman,COL
 8476312,Josh Manson,Josh,Manson,32,1991-10-07,,D,Defenseman,COL
 8479387,Keaton Middleton,Keaton,Middleton,26,1998-02-10,,D,Defenseman,COL
-8484922,Garrett Pyke,Garrett,Pyke,25,1999-08-01,,D,Defenseman,COL
 8480157,Calle Rosen,Calle,Rosen,30,1994-02-02,,D,Defenseman,COL
 8478038,Devon Toews,Devon,Toews,30,1994-02-21,,D,Defenseman,COL
-8484556,Saige Weinstein,Saige,Weinstein,19,2005-05-30,,D,Defenseman,COL
 8478042,Viktor Arvidsson,Viktor,Arvidsson,31,1993-04-08,,L,Forward,EDM
 8484127,Carl Berglund,Carl,Berglund,24,2000-01-16,,C,Forward,EDM
 8477015,Connor Brown,Connor,Brown,30,1994-01-14,,R,Forward,EDM
@@ -334,7 +324,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8477406,Mattias Janmark,Mattias,Janmark,31,1992-12-08,,C,Forward,EDM
 8482162,Roby Jarventie,Roby,Jarventie,22,2002-08-08,,L,Forward,EDM
 8475169,Evander Kane,Evander,Kane,33,1991-08-02,,L,Forward,EDM
-8481534,Raphael Lavoie,Raphael,Lavoie,23,2000-09-25,,C,Forward,EDM
+8481534,Raphael Lavoie,Raphael,Lavoie,24,2000-09-25,,C,Forward,EDM
 8478402,Connor McDavid,Connor,McDavid,27,1997-01-13,,C,Forward,EDM
 8476454,Ryan Nugent-Hopkins,Ryan,Nugent-Hopkins,31,1993-04-12,,C,Forward,EDM
 8478967,Lane Pederson,Lane,Pederson,27,1997-08-04,,C,Forward,EDM
@@ -368,7 +358,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8483733,Nikita Grebenkin,Nikita,Grebenkin,21,2003-05-02,,R,Forward,TOR
 8482130,Roni Hirvonen,Roni,Hirvonen,22,2002-01-10,,C,Forward,TOR
 8480995,Pontus Holmberg,Pontus,Holmberg,25,1999-03-09,,R,Forward,TOR
-8475714,Calle Jarnkrok,Calle,Jarnkrok,32,1991-09-25,,C,Forward,TOR
+8475714,Calle Jarnkrok,Calle,Jarnkrok,33,1991-09-25,,C,Forward,TOR
 8480144,David Kampf,David,Kampf,29,1995-01-12,,C,Forward,TOR
 8482720,Matthew Knies,Matthew,Knies,21,2002-10-17,,L,Forward,TOR
 8482741,Braeden Kressler,Braeden,Kressler,21,2003-01-05,,C,Forward,TOR
@@ -386,7 +376,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482525,Ryan Tverberg,Ryan,Tverberg,22,2002-01-30,,C,Forward,TOR
 8482880,Ty Voit,Ty,Voit,21,2003-06-10,,L,Forward,TOR
 8481122,Simon Benoit,Simon,Benoit,26,1998-09-19,,D,Defenseman,TOR
-8484464,Noah Chadwick,Noah,Chadwick,19,2005-05-10,,D,Defenseman,TOR
 8484805,Ben Danford,Ben,Danford,18,2006-02-06,,D,Defenseman,TOR
 8475171,Oliver Ekman-Larsson,Oliver,Ekman-Larsson,33,1991-07-17,,D,Defenseman,TOR
 8475825,Jani Hakanpää,Jani,Hakanpää,32,1992-03-31,,D,Defenseman,TOR
@@ -409,11 +398,11 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482146,Luke Evangelista,Luke,Evangelista,22,2002-02-21,,R,Forward,NSH
 8476887,Filip Forsberg,Filip,Forsberg,30,1994-08-13,,L,Forward,NSH
 8483000,Jordan Frasca,Jordan,Frasca,23,2001-07-05,,C,Forward,NSH
+8485005,Hiroki Gojsic,Hiroki,Gojsic,18,2006-05-01,,R,Forward,NSH
 8476994,Vinnie Hinostroza,Vinnie,Hinostroza,30,1994-04-03,,C,Forward,NSH
 8476873,Mark Jankowski,Mark,Jankowski,30,1994-09-13,,C,Forward,NSH
 8483465,Joakim Kemell,Joakim,Kemell,20,2004-04-27,,R,Forward,NSH
 8482742,Zachary L'Heureux,Zachary,L'Heureux,21,2003-05-15,,L,Forward,NSH
-8484187,Kalan Lind,Kalan,Lind,19,2005-01-25,,L,Forward,NSH
 8481422,Jake Lucchini,Jake,Lucchini,29,1995-05-09,,C,Forward,NSH
 8477446,Michael McCarron,Michael,McCarron,29,1995-03-07,,R,Forward,NSH
 8481817,Navrin Mutter,Navrin,Mutter,23,2001-03-15,,L,Forward,NSH
@@ -421,7 +410,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8474679,Gustav Nyquist,Gustav,Nyquist,35,1989-09-01,,C,Forward,NSH
 8475158,Ryan O'Reilly,Ryan,O'Reilly,33,1991-02-07,,C,Forward,NSH
 8481704,Juuso Parssinen,Juuso,Parssinen,23,2001-02-01,,C,Forward,NSH
-8483844,Austin Roest,Austin,Roest,20,2004-01-22,,R,Forward,NSH
 8483513,Reid Schaefer,Reid,Schaefer,21,2003-09-21,,L,Forward,NSH
 8476925,Colton Sissons,Colton,Sissons,30,1993-11-05,,C,Forward,NSH
 8482062,Cole Smith,Cole,Smith,28,1995-10-28,,L,Forward,NSH
@@ -510,7 +498,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8483921,Milo Roelens,Milo,Roelens,21,2003-01-16,,C,Forward,TBL
 8477839,Conor Sheary,Conor,Sheary,32,1992-06-08,,L,Forward,TBL
 8482449,Lukas Svejkovsky,Lukas,Svejkovsky,22,2001-11-28,,C,Forward,TBL
-8484507,Gabriel Szturc,Gabriel,Szturc,20,2003-09-24,,C,Forward,TBL
+8484507,Gabriel Szturc,Gabriel,Szturc,21,2003-09-24,,C,Forward,TBL
 8483398,Declan Carlile,Declan,Carlile,24,2000-05-18,,D,Defenseman,TBL
 8478416,Erik Cernak,Erik,Cernak,27,1997-05-28,,D,Defenseman,TBL
 8481719,Maxwell Crozier,Maxwell,Crozier,24,2000-04-19,,D,Defenseman,TBL
@@ -579,7 +567,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8479518,Fredrik Karlstrom,Fredrik,Karlstrom,26,1998-01-12,,C,Forward,NYI
 8483104,Daylan Kuefler,Daylan,Kuefler,22,2002-02-10,,L,Forward,NYI
 8475314,Anders Lee,Anders,Lee,34,1990-07-03,,L,Forward,NYI
-8482882,Eetu Liukas,Eetu,Liukas,21,2002-09-25,,L,Forward,NYI
+8482882,Eetu Liukas,Eetu,Liukas,22,2002-09-25,,L,Forward,NYI
 8481237,Kyle MacLean,Kyle,MacLean,25,1999-04-29,,C,Forward,NYI
 8483062,Matthew Maggio,Matthew,Maggio,21,2002-11-25,,R,Forward,NYI
 8475754,Brock Nelson,Brock,Nelson,32,1991-10-15,,C,Forward,NYI
@@ -612,19 +600,17 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482156,Tanner Dickinson,Tanner,Dickinson,22,2002-03-05,,C,Forward,STL
 8484164,Dalibor Dvorsky,Dalibor,Dvorsky,19,2005-06-15,,C,Forward,STL
 8476889,Radek Faksa,Radek,Faksa,30,1994-01-09,,C,Forward,STL
-8482077,Dylan Holloway,Dylan,Holloway,22,2001-09-23,,C,Forward,STL
+8482077,Dylan Holloway,Dylan,Holloway,23,2001-09-23,,C,Forward,STL
 8478472,Mathieu Joseph,Mathieu,Joseph,27,1997-02-09,,R,Forward,STL
 8477953,Kasperi Kapanen,Kasperi,Kapanen,28,1996-07-23,,R,Forward,STL
 8483463,Aleksanteri Kaskimaki,Aleksanteri,Kaskimaki,20,2004-02-06,,C,Forward,STL
 8479385,Jordan Kyrou,Jordan,Kyrou,26,1998-05-05,,C,Forward,STL
 8481000,Mathias Laferriere,Mathias,Laferriere,24,2000-06-27,,R,Forward,STL
 8482089,Jake Neighbours,Jake,Neighbours,22,2002-03-29,,L,Forward,STL
-8484393,Juraj Pekarcik,Juraj,Pekarcik,19,2005-09-12,,L,Forward,STL
 8482121,Dylan Peterson,Dylan,Peterson,22,2002-01-08,,C,Forward,STL
 8482716,Simon Robertsson,Simon,Robertsson,21,2003-02-05,,R,Forward,STL
 8476438,Brandon Saad,Brandon,Saad,31,1992-10-27,,L,Forward,STL
 8475170,Brayden Schenn,Brayden,Schenn,33,1991-08-22,,C,Forward,STL
-8484229,Jakub Stancl,Jakub,Stancl,19,2005-04-10,,C,Forward,STL
 8476897,Oskar Sundqvist,Oskar,Sundqvist,30,1994-03-23,,C,Forward,STL
 8484951,Marcus Sylvegard,Marcus,Sylvegard,25,1999-05-04,,R,Forward,STL
 8480074,Alexandre Texier,Alexandre,Texier,25,1999-09-13,,C,Forward,STL
@@ -634,7 +620,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8483061,Jeremie Biakabutuka,Jeremie,Biakabutuka,22,2002-03-05,,D,Defenseman,STL
 8481598,Philip Broberg,Philip,Broberg,23,2001-06-25,,D,Defenseman,STL
 8483427,Michael Buchinger,Michael,Buchinger,20,2004-04-25,,D,Defenseman,STL
-8484151,Quinton Burns,Quinton,Burns,19,2005-04-14,,D,Defenseman,STL
 8475753,Justin Faulk,Justin,Faulk,32,1992-03-20,,D,Defenseman,STL
 8483764,Marc-Andre Gaudet,Marc-Andre,Gaudet,20,2003-10-24,,D,Defenseman,STL
 8484790,Adam Jiricek,Adam,Jiricek,18,2006-06-28,,D,Defenseman,STL
@@ -671,7 +656,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8474590,John Carlson,John,Carlson,34,1990-01-10,,D,Defenseman,WSH
 8479345,Jakob Chychrun,Jakob,Chychrun,26,1998-03-31,,D,Defenseman,WSH
 8480796,Martin Fehervary,Martin,Fehervary,24,1999-10-06,,D,Defenseman,WSH
-8484772,Leon Muggli,Leon,Muggli,18,2006-07-09,,D,Defenseman,WSH
 8478911,Matt Roy,Matt,Roy,29,1995-03-01,,D,Defenseman,WSH
 8480873,Rasmus Sandin,Rasmus,Sandin,24,2000-03-07,,D,Defenseman,WSH
 8477845,Trevor van Riemsdyk,Trevor,van Riemsdyk,33,1991-07-24,,D,Defenseman,WSH
@@ -754,7 +738,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481206,John Ludvig,John,Ludvig,24,2000-08-02,,D,Defenseman,PIT
 8477969,Marcus Pettersson,Marcus,Pettersson,28,1996-05-08,,D,Defenseman,PIT
 8483503,Owen Pickering,Owen,Pickering,20,2004-01-27,,D,Defenseman,PIT
-8484213,Emil Pieniniemi,Emil,Pieniniemi,19,2005-03-02,,D,Defenseman,PIT
 8478854,Ryan Shea,Ryan,Shea,27,1997-02-11,,D,Defenseman,PIT
 8481030,Jack St. Ivany,Jack,St. Ivany,25,1999-07-22,,D,Defenseman,PIT
 8482863,Caedan Bankier,Caedan,Bankier,21,2003-01-26,,C,Forward,MIN
@@ -777,8 +760,8 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482829,Michael Milne,Michael,Milne,22,2002-09-21,,L,Forward,MIN
 8482217,Pavel Novak,Pavel,Novak,22,2002-04-16,,R,Forward,MIN
 8483499,Liam Ohgren,Liam,Ohgren,20,2004-01-28,,L,Forward,MIN
-8482197,Adam Raska,Adam,Raska,22,2001-09-25,,R,Forward,MIN
-8482079,Marco Rossi,Marco,Rossi,22,2001-09-23,,C,Forward,MIN
+8482197,Adam Raska,Adam,Raska,23,2001-09-25,,R,Forward,MIN
+8482079,Marco Rossi,Marco,Rossi,23,2001-09-23,,C,Forward,MIN
 8476913,Devin Shore,Devin,Shore,30,1994-07-19,,C,Forward,MIN
 8481866,Luke Toporowski,Luke,Toporowski,23,2001-04-12,,L,Forward,MIN
 8478508,Yakov Trenin,Yakov,Trenin,27,1997-01-13,,C,Forward,MIN
@@ -812,7 +795,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482159,Tyson Foerster,Tyson,Foerster,22,2002-01-18,,R,Forward,PHI
 8480028,Morgan Frost,Morgan,Frost,25,1999-05-14,,C,Forward,PHI
 8479587,Rhett Gardner,Rhett,Gardner,28,1996-02-28,,C,Forward,PHI
-8483697,Alexis Gendron,Alexis,Gendron,20,2003-12-30,,R,Forward,PHI
 8477903,Garnet Hathaway,Garnet,Hathaway,32,1991-11-23,,R,Forward,PHI
 8478439,Travis Konecny,Travis,Konecny,27,1997-03-11,,R,Forward,PHI
 8476872,Scott Laughton,Scott,Laughton,30,1994-05-30,,C,Forward,PHI
@@ -824,7 +806,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481760,Massimo Rizzo,Massimo,Rizzo,23,2001-06-13,,C,Forward,PHI
 8480015,Owen Tippett,Owen,Tippett,25,1999-02-16,,R,Forward,PHI
 8482727,Samu Tuomaala,Samu,Tuomaala,21,2003-01-08,,R,Forward,PHI
-8482161,Zayde Wisdom,Zayde,Wisdom,22,2002-07-07,,R,Forward,PHI
 8482126,Emil Andrae,Emil,Andrae,22,2002-02-23,,D,Defenseman,PHI
 8481521,Ronnie Attard,Ronnie,Attard,25,1999-03-20,,D,Defenseman,PHI
 8478011,Louie Belpedio,Louie,Belpedio,28,1996-05-14,,D,Defenseman,PHI
@@ -836,7 +817,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8473446,Erik Johnson,Erik,Johnson,36,1988-03-21,,D,Defenseman,PHI
 8483760,Hunter McDonald,Hunter,McDonald,22,2002-05-11,,D,Defenseman,PHI
 8477499,Rasmus Ristolainen,Rasmus,Ristolainen,29,1994-10-27,,D,Defenseman,PHI
-8482890,Ethan Samson,Ethan,Samson,21,2003-08-23,,D,Defenseman,PHI
 8477948,Travis Sanheim,Travis,Sanheim,28,1996-03-29,,D,Defenseman,PHI
 8476372,Nick Seeler,Nick,Seeler,31,1993-06-03,,D,Defenseman,PHI
 8481546,Cam York,Cam,York,23,2001-01-05,,D,Defenseman,PHI
@@ -900,6 +880,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481594,Nathan Legare,Nathan,Legare,23,2001-01-11,,R,Forward,NJD
 8477073,Kurtis MacDermid,Kurtis,MacDermid,30,1994-03-25,,L,Forward,NJD
 8478414,Timo Meier,Timo,Meier,27,1996-10-08,,R,Forward,NJD
+8482110,Dawson Mercer,Dawson,Mercer,22,2001-10-27,,C,Forward,NJD
 8476474,Stefan Noesen,Stefan,Noesen,31,1993-02-12,,R,Forward,NJD
 8476292,Ondrej Palat,Ondrej,Palat,33,1991-03-28,,L,Forward,NJD
 8481115,Ryan Schmelzer,Ryan,Schmelzer,31,1993-07-28,,C,Forward,NJD
@@ -949,7 +930,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481655,Cole Schwindt,Cole,Schwindt,23,2001-04-25,,R,Forward,CGY
 8481068,Yegor Sharangovich,Yegor,Sharangovich,26,1998-06-06,,C,Forward,CGY
 8482766,William Stromgren,William,Stromgren,21,2003-06-07,,L,Forward,CGY
-8482074,Connor Zary,Connor,Zary,22,2001-09-25,,C,Forward,CGY
+8482074,Connor Zary,Connor,Zary,23,2001-09-25,,C,Forward,CGY
 8478397,Rasmus Andersson,Rasmus,Andersson,27,1996-10-27,,D,Defenseman,CGY
 8481219,Jonathan Aspirot,Jonathan,Aspirot,25,1999-05-16,,D,Defenseman,CGY
 8480860,Kevin Bahl,Kevin,Bahl,24,2000-06-27,,D,Defenseman,CGY
@@ -960,7 +941,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482170,Joni Jurmo,Joni,Jurmo,22,2002-04-19,,D,Defenseman,CGY
 8482165,Yan Kuznetsov,Yan,Kuznetsov,22,2002-03-09,,D,Defenseman,CGY
 8482624,Daniil Miromanov,Daniil,Miromanov,27,1997-07-11,,D,Defenseman,CGY
-8484198,Etienne Morin,Etienne,Morin,19,2005-03-09,,D,Defenseman,CGY
 8481167,Brayden Pachal,Brayden,Pachal,25,1999-08-23,,D,Defenseman,CGY
 8484768,Zayne Parekh,Zayne,Parekh,18,2006-02-15,,D,Defenseman,CGY
 8482173,Jeremie Poirier,Jeremie,Poirier,22,2002-06-02,,D,Defenseman,CGY
@@ -998,7 +978,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8483524,Shane Wright,Shane,Wright,20,2004-01-05,,C,Forward,SEA
 8478840,Will Borgen,Will,Borgen,27,1996-12-19,,D,Defenseman,SEA
 8477522,Nikolas Brouillard,Nikolas,Brouillard,29,1995-02-07,,D,Defenseman,SEA
-8484162,Lukas Dragicevic,Lukas,Dragicevic,19,2005-04-25,,D,Defenseman,SEA
 8478407,Vince Dunn,Vince,Dunn,27,1996-10-29,,D,Defenseman,SEA
 8482858,Ryker Evans,Ryker,Evans,22,2001-12-13,,D,Defenseman,SEA
 8479985,Cale Fleury,Cale,Fleury,25,1998-11-19,,D,Defenseman,SEA
@@ -1010,7 +989,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8476467,Jamie Oleksiak,Jamie,Oleksiak,31,1992-12-21,,D,Defenseman,SEA
 8477467,Gustav Olofsson,Gustav,Olofsson,29,1994-12-01,,D,Defenseman,SEA
 8482866,Ville Ottavainen,Ville,Ottavainen,22,2002-08-12,,D,Defenseman,SEA
-8484217,Caden Price,Caden,Price,19,2005-08-24,,D,Defenseman,SEA
 8478020,Michael Amadio,Michael,Amadio,28,1996-05-13,,R,Forward,OTT
 8480208,Drake Batherson,Drake,Batherson,26,1998-04-27,,R,Forward,OTT
 8483579,Wyatt Bongiovanni,Wyatt,Bongiovanni,25,1999-07-24,,L,Forward,OTT
@@ -1038,7 +1016,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481133,Cole Reinhardt,Cole,Reinhardt,24,2000-02-01,,L,Forward,OTT
 8482116,Tim Stützle,Tim,Stützle,22,2002-01-15,,C,Forward,OTT
 8480801,Brady Tkachuk,Brady,Tkachuk,25,1999-09-16,,L,Forward,OTT
-8484429,Matthew Andonovski,Matthew,Andonovski,19,2005-03-14,,D,Defenseman,OTT
 8480879,Jacob Bernard-Docker,Jacob,Bernard-Docker,24,2000-06-30,,D,Defenseman,OTT
 8478469,Thomas Chabot,Thomas,Chabot,27,1997-01-30,,D,Defenseman,OTT
 8479602,Jeremy Davies,Jeremy,Davies,27,1996-12-04,,D,Defenseman,OTT
@@ -1148,14 +1125,13 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8476374,Sean Kuraly,Sean,Kuraly,31,1993-01-20,,C,Forward,CBJ
 8482744,James Malatesta,James,Malatesta,21,2003-05-31,,L,Forward,CBJ
 8480893,Kirill Marchenko,Kirill,Marchenko,24,2000-07-21,,R,Forward,CBJ
-8482881,Max McCue,Max,McCue,21,2003-02-10,,C,Forward,CBJ
 8484125,Hunter McKown,Hunter,McKown,22,2002-08-18,,C,Forward,CBJ
 8477497,Sean Monahan,Sean,Monahan,29,1994-10-12,,C,Forward,CBJ
 8479671,Mathieu Olivier,Mathieu,Olivier,27,1997-02-11,,R,Forward,CBJ
 8484214,Luca Pinelli,Luca,Pinelli,19,2005-04-05,,C,Forward,CBJ
 8482451,Mikael Pyyhtia,Mikael,Pyyhtia,22,2001-12-17,,L,Forward,CBJ
 8482705,Cole Sillinger,Cole,Sillinger,21,2003-05-16,,C,Forward,CBJ
-8483538,Owen Sillinger,Owen,Sillinger,26,1997-09-23,,C,Forward,CBJ
+8483538,Owen Sillinger,Owen,Sillinger,27,1997-09-23,,C,Forward,CBJ
 8474037,James van Riemsdyk,James,van Riemsdyk,35,1989-05-04,,L,Forward,CBJ
 8481716,Dmitri Voronkov,Dmitri,Voronkov,24,2000-09-10,,L,Forward,CBJ
 8482453,Ole Julian Bjorgvik-Holm,Ole Julian,Bjorgvik-Holm,22,2002-05-23,,D,Defenseman,CBJ
@@ -1229,7 +1205,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482903,Jalen Luypen,Jalen,Luypen,22,2002-06-28,,C,Forward,CHI
 8474034,Patrick Maroon,Patrick,Maroon,36,1988-04-23,,L,Forward,CHI
 8481624,Ilya Mikheyev,Ilya,Mikheyev,29,1994-10-10,,R,Forward,CHI
-8484195,Martin Misiak,Martin,Misiak,19,2004-09-30,,R,Forward,CHI
 8483493,Frank Nazar,Frank,Nazar,20,2004-01-14,,C,Forward,CHI
 8482117,Lukas Reichel,Lukas,Reichel,22,2002-05-17,,L,Forward,CHI
 8482082,Ryder Rolston,Ryder,Rolston,22,2001-10-31,,R,Forward,CHI
@@ -1239,7 +1214,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8482172,Landon Slaggert,Landon,Slaggert,22,2002-06-25,,L,Forward,CHI
 8475225,Craig Smith,Craig,Smith,35,1989-09-05,,C,Forward,CHI
 8476882,Teuvo Teravainen,Teuvo,Teravainen,30,1994-09-11,,C,Forward,CHI
-8484761,Marek Vanacker,Marek,Vanacker,18,2006-04-12,,L,Forward,CHI
 8482700,Nolan Allan,Nolan,Allan,21,2003-04-28,,D,Defenseman,CHI
 8474673,TJ Brodie,TJ,Brodie,34,1990-06-07,,D,Defenseman,CHI
 8481806,Louis Crevier,Louis,Crevier,23,2001-05-04,,D,Defenseman,CHI
@@ -1254,7 +1228,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8481568,Alex Vlasic,Alex,Vlasic,23,2001-06-05,,D,Defenseman,CHI
 8477473,Justin Bailey,Justin,Bailey,29,1995-07-01,,R,Forward,SJS
 8482133,Thomas Bordeleau,Thomas,Bordeleau,22,2002-01-03,,C,Forward,SJS
-8483879,Nolan Burke,Nolan,Burke,21,2002-12-09,,C,Forward,SJS
 8483428,Filip Bystedt,Filip,Bystedt,20,2004-02-04,,C,Forward,SJS
 8482206,Ethan Cardwell,Ethan,Cardwell,22,2002-08-30,,R,Forward,SJS
 8484801,Macklin Celebrini,Macklin,Celebrini,18,2006-06-13,,C,Forward,SJS
@@ -1280,7 +1253,7 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8484227,Will Smith,Will,Smith,19,2005-03-17,,C,Forward,SJS
 8481477,Nico Sturm,Nico,Sturm,29,1995-05-03,,C,Forward,SJS
 8475726,Tyler Toffoli,Tyler,Toffoli,32,1992-04-24,,C,Forward,SJS
-8477505,Alexander Wennberg,Alexander,Wennberg,29,1994-09-22,,C,Forward,SJS
+8477505,Alexander Wennberg,Alexander,Wennberg,30,1994-09-22,,C,Forward,SJS
 8480188,Fabian Zetterlund,Fabian,Zetterlund,25,1999-08-25,,L,Forward,SJS
 8476988,Matt Benning,Matt,Benning,30,1994-05-25,,D,Defenseman,SJS
 8484152,Luca Cagnoni,Luca,Cagnoni,19,2004-12-21,,D,Defenseman,SJS
@@ -1290,7 +1263,6 @@ playerId,fullName,firstName,lastName,currentAge,birthDate,rookie,primaryPosition
 8479983,Mario Ferraro,Mario,Ferraro,26,1998-09-17,,D,Defenseman,SJS
 8483745,Jake Furlong,Jake,Furlong,20,2004-03-04,,D,Defenseman,SJS
 8482934,Artem Guryev,Artem,Guryev,21,2003-05-17,,D,Defenseman,SJS
-8482927,Gannon Laroque,Gannon,Laroque,21,2003-08-20,,D,Defenseman,SJS
 8482166,Shakir Mukhamadullin,Shakir,Mukhamadullin,22,2002-01-10,,D,Defenseman,SJS
 8484313,Valtteri Pulli,Valtteri,Pulli,23,2001-03-13,,D,Defenseman,SJS
 8480172,Jan Rutta,Jan,Rutta,34,1990-07-29,,D,Defenseman,SJS
